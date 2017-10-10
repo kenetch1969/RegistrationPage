@@ -14,6 +14,8 @@
 		3D10DF1C1F86C97500BA8405 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3D10DF1A1F86C97500BA8405 /* LaunchScreen.storyboard */; };
 		3D10DF271F86C97500BA8405 /* TheRegistrationPageTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D10DF261F86C97500BA8405 /* TheRegistrationPageTests.swift */; };
 		3D10DF321F86C97500BA8405 /* TheRegistrationPageUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D10DF311F86C97500BA8405 /* TheRegistrationPageUITests.swift */; };
+		3D10DF401F86CC9F00BA8405 /* RegistrationPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D10DF3F1F86CC9F00BA8405 /* RegistrationPresenter.swift */; };
+		3D10DF411F86CDBE00BA8405 /* RegistrationPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D10DF3F1F86CC9F00BA8405 /* RegistrationPresenter.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +49,7 @@
 		3D10DF2D1F86C97500BA8405 /* TheRegistrationPageUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TheRegistrationPageUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3D10DF311F86C97500BA8405 /* TheRegistrationPageUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TheRegistrationPageUITests.swift; sourceTree = "<group>"; };
 		3D10DF331F86C97500BA8405 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3D10DF3F1F86CC9F00BA8405 /* RegistrationPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegistrationPresenter.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +106,7 @@
 				3D10DF181F86C97500BA8405 /* Assets.xcassets */,
 				3D10DF1A1F86C97500BA8405 /* LaunchScreen.storyboard */,
 				3D10DF1D1F86C97500BA8405 /* Info.plist */,
+				3D10DF3F1F86CC9F00BA8405 /* RegistrationPresenter.swift */,
 			);
 			path = TheRegistrationPage;
 			sourceTree = "<group>";
@@ -261,6 +265,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3D10DF141F86C97500BA8405 /* ViewController.swift in Sources */,
+				3D10DF401F86CC9F00BA8405 /* RegistrationPresenter.swift in Sources */,
 				3D10DF121F86C97500BA8405 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -270,6 +275,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3D10DF271F86C97500BA8405 /* TheRegistrationPageTests.swift in Sources */,
+				3D10DF411F86CDBE00BA8405 /* RegistrationPresenter.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

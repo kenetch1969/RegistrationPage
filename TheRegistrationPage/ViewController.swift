@@ -9,17 +9,37 @@
 import UIKit
 
 class ViewController: UIViewController {
+    @IBOutlet weak var emailTextField: UITextField!
+    @IBOutlet weak var passwordTextField: UITextField!
+    @IBOutlet weak var fullNameTextField: UITextField!
+    @IBOutlet weak var phoneNumberTextField: UITextField!
+    var presenter: RegistrationPresenter?
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        self.presenter = RegistrationPresenter(delegate: self)
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
     }
 
-
+    @IBAction func buttonRegisterDidTap(_ sender: Any) {
+        self.presenter?.register(email: emailTextField.text!, password: passwordTextField.text!, fullName: fullNameTextField.text!, phoneNumber: phoneNumberTextField.text!)
+    }
 }
 
+extension ViewController: RegistrationDelegate{
+    func showProgress(){
+        
+    }
+    func hideProgress(){
+        
+    }
+    func registrationDidSucceed(){
+        print("succeed")
+    }
+    func registrationDidFailed(message: String){
+        print(message)
+    }
+}
