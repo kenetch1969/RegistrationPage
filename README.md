@@ -3,7 +3,7 @@
 
 ## About MVP
 
-MVP or Model View Presenter, the most popular android design partern.
+MVP or Model View Presenter, better than MVC.
 
 <p align="center" width= "50%"><br/><img src="https://d1edrlpyc25xu0.cloudfront.net/kiwari-prod/image/upload/v_RuAVurYg/Screen+Shot+2018-10-04+at+22.33.54.png">
 
