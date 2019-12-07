@@ -15,7 +15,13 @@
 		3D10DF271F86C97500BA8405 /* TheRegistrationPageTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D10DF261F86C97500BA8405 /* TheRegistrationPageTests.swift */; };
 		3D10DF321F86C97500BA8405 /* TheRegistrationPageUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D10DF311F86C97500BA8405 /* TheRegistrationPageUITests.swift */; };
 		3D10DF401F86CC9F00BA8405 /* RegistrationPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D10DF3F1F86CC9F00BA8405 /* RegistrationPresenter.swift */; };
-		3D10DF411F86CDBE00BA8405 /* RegistrationPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D10DF3F1F86CC9F00BA8405 /* RegistrationPresenter.swift */; };
+		42E50ABC239BEDDA00FC2B4C /* BasePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42E50ABB239BEDDA00FC2B4C /* BasePresenter.swift */; };
+		42E50AC0239BF64B00FC2B4C /* UIImageView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42E50ABE239BF64B00FC2B4C /* UIImageView+Extension.swift */; };
+		42E50AC1239BF64B00FC2B4C /* UIViewController+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42E50ABF239BF64B00FC2B4C /* UIViewController+Extension.swift */; };
+		42E50AC3239BF73D00FC2B4C /* ShowRegisterTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42E50AC2239BF73D00FC2B4C /* ShowRegisterTableViewController.swift */; };
+		42E50AC5239BFD7800FC2B4C /* ShowPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42E50AC4239BFD7800FC2B4C /* ShowPresenter.swift */; };
+		42F90311239AE8D300C6021D /* TheRegistration.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 42F9030F239AE8D300C6021D /* TheRegistration.xcdatamodeld */; };
+		42F90316239AED7E00C6021D /* Persistences.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42F90315239AED7E00C6021D /* Persistences.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,6 +56,13 @@
 		3D10DF311F86C97500BA8405 /* TheRegistrationPageUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TheRegistrationPageUITests.swift; sourceTree = "<group>"; };
 		3D10DF331F86C97500BA8405 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3D10DF3F1F86CC9F00BA8405 /* RegistrationPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegistrationPresenter.swift; sourceTree = "<group>"; };
+		42E50ABB239BEDDA00FC2B4C /* BasePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasePresenter.swift; sourceTree = "<group>"; };
+		42E50ABE239BF64B00FC2B4C /* UIImageView+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImageView+Extension.swift"; sourceTree = "<group>"; };
+		42E50ABF239BF64B00FC2B4C /* UIViewController+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extension.swift"; sourceTree = "<group>"; };
+		42E50AC2239BF73D00FC2B4C /* ShowRegisterTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowRegisterTableViewController.swift; sourceTree = "<group>"; };
+		42E50AC4239BFD7800FC2B4C /* ShowPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowPresenter.swift; sourceTree = "<group>"; };
+		42F90310239AE8D300C6021D /* TheRegistration.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = TheRegistration.xcdatamodel; sourceTree = "<group>"; };
+		42F90315239AED7E00C6021D /* Persistences.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistences.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,13 +113,16 @@
 		3D10DF101F86C97500BA8405 /* TheRegistrationPage */ = {
 			isa = PBXGroup;
 			children = (
+				42E50ABD239BF62000FC2B4C /* Extension */,
+				42F90314239AEBFC00C6021D /* View */,
+				42F90313239AEBDA00C6021D /* Presenter */,
+				42F90312239AEBD000C6021D /* Model */,
 				3D10DF111F86C97500BA8405 /* AppDelegate.swift */,
-				3D10DF131F86C97500BA8405 /* ViewController.swift */,
 				3D10DF151F86C97500BA8405 /* Main.storyboard */,
 				3D10DF181F86C97500BA8405 /* Assets.xcassets */,
 				3D10DF1A1F86C97500BA8405 /* LaunchScreen.storyboard */,
 				3D10DF1D1F86C97500BA8405 /* Info.plist */,
-				3D10DF3F1F86CC9F00BA8405 /* RegistrationPresenter.swift */,
+				42F9030F239AE8D300C6021D /* TheRegistration.xcdatamodeld */,
 			);
 			path = TheRegistrationPage;
 			sourceTree = "<group>";
@@ -127,6 +143,42 @@
 				3D10DF331F86C97500BA8405 /* Info.plist */,
 			);
 			path = TheRegistrationPageUITests;
+			sourceTree = "<group>";
+		};
+		42E50ABD239BF62000FC2B4C /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				42E50ABE239BF64B00FC2B4C /* UIImageView+Extension.swift */,
+				42E50ABF239BF64B00FC2B4C /* UIViewController+Extension.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		42F90312239AEBD000C6021D /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				42F90315239AED7E00C6021D /* Persistences.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		42F90313239AEBDA00C6021D /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				3D10DF3F1F86CC9F00BA8405 /* RegistrationPresenter.swift */,
+				42E50ABB239BEDDA00FC2B4C /* BasePresenter.swift */,
+				42E50AC4239BFD7800FC2B4C /* ShowPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		42F90314239AEBFC00C6021D /* View */ = {
+			isa = PBXGroup;
+			children = (
+				3D10DF131F86C97500BA8405 /* ViewController.swift */,
+				42E50AC2239BF73D00FC2B4C /* ShowRegisterTableViewController.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -197,16 +249,18 @@
 				TargetAttributes = {
 					3D10DF0D1F86C97500BA8405 = {
 						CreatedOnToolsVersion = 8.3.2;
-						DevelopmentTeam = 33486X95WD;
+						DevelopmentTeam = 9C6BLPLVF5;
 						ProvisioningStyle = Automatic;
 					};
 					3D10DF211F86C97500BA8405 = {
 						CreatedOnToolsVersion = 8.3.2;
+						DevelopmentTeam = 9C6BLPLVF5;
 						ProvisioningStyle = Automatic;
 						TestTargetID = 3D10DF0D1F86C97500BA8405;
 					};
 					3D10DF2C1F86C97500BA8405 = {
 						CreatedOnToolsVersion = 8.3.2;
+						DevelopmentTeam = 9C6BLPLVF5;
 						ProvisioningStyle = Automatic;
 						TestTargetID = 3D10DF0D1F86C97500BA8405;
 					};
@@ -217,6 +271,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
@@ -264,8 +319,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				42E50AC1239BF64B00FC2B4C /* UIViewController+Extension.swift in Sources */,
+				42F90311239AE8D300C6021D /* TheRegistration.xcdatamodeld in Sources */,
+				42E50ABC239BEDDA00FC2B4C /* BasePresenter.swift in Sources */,
+				42E50AC0239BF64B00FC2B4C /* UIImageView+Extension.swift in Sources */,
 				3D10DF141F86C97500BA8405 /* ViewController.swift in Sources */,
+				42E50AC5239BFD7800FC2B4C /* ShowPresenter.swift in Sources */,
+				42E50AC3239BF73D00FC2B4C /* ShowRegisterTableViewController.swift in Sources */,
 				3D10DF401F86CC9F00BA8405 /* RegistrationPresenter.swift in Sources */,
+				42F90316239AED7E00C6021D /* Persistences.swift in Sources */,
 				3D10DF121F86C97500BA8405 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -275,7 +337,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				3D10DF271F86C97500BA8405 /* TheRegistrationPageTests.swift in Sources */,
-				3D10DF411F86CDBE00BA8405 /* RegistrationPresenter.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -419,12 +480,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = 33486X95WD;
+				DEVELOPMENT_TEAM = 9C6BLPLVF5;
 				INFOPLIST_FILE = TheRegistrationPage/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = technomotion.id.TheRegistrationPage;
+				PRODUCT_BUNDLE_IDENTIFIER = com.inventaapps.TheRegistrationPage;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
+				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;
 		};
@@ -432,12 +494,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = 33486X95WD;
+				DEVELOPMENT_TEAM = 9C6BLPLVF5;
 				INFOPLIST_FILE = TheRegistrationPage/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = technomotion.id.TheRegistrationPage;
+				PRODUCT_BUNDLE_IDENTIFIER = com.inventaapps.TheRegistrationPage;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
+				SWIFT_VERSION = 5.0;
 			};
 			name = Release;
 		};
@@ -446,11 +509,17 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_IDENTITY = "Apple Development";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 9C6BLPLVF5;
 				INFOPLIST_FILE = TheRegistrationPageTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = technomotion.id.TheRegistrationPageTests;
+				PRODUCT_BUNDLE_IDENTIFIER = com.inventaapps.TheRegistrationPage;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				"PROVISIONING_PROFILE_SPECIFIER[sdk=macosx*]" = "";
+				SWIFT_VERSION = 5.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TheRegistrationPage.app/TheRegistrationPage";
 			};
 			name = Debug;
@@ -460,11 +529,17 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_IDENTITY = "Apple Development";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 9C6BLPLVF5;
 				INFOPLIST_FILE = TheRegistrationPageTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = technomotion.id.TheRegistrationPageTests;
+				PRODUCT_BUNDLE_IDENTIFIER = com.inventaapps.TheRegistrationPage;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				"PROVISIONING_PROFILE_SPECIFIER[sdk=macosx*]" = "";
+				SWIFT_VERSION = 5.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TheRegistrationPage.app/TheRegistrationPage";
 			};
 			name = Release;
@@ -473,11 +548,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				DEVELOPMENT_TEAM = 9C6BLPLVF5;
 				INFOPLIST_FILE = TheRegistrationPageUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = technomotion.id.TheRegistrationPageUITests;
+				PRODUCT_BUNDLE_IDENTIFIER = com.inventaapps.TheRegistrationPage;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
+				SWIFT_VERSION = 5.0;
 				TEST_TARGET_NAME = TheRegistrationPage;
 			};
 			name = Debug;
@@ -486,11 +562,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				DEVELOPMENT_TEAM = 9C6BLPLVF5;
 				INFOPLIST_FILE = TheRegistrationPageUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = technomotion.id.TheRegistrationPageUITests;
+				PRODUCT_BUNDLE_IDENTIFIER = com.inventaapps.TheRegistrationPage;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
+				SWIFT_VERSION = 5.0;
 				TEST_TARGET_NAME = TheRegistrationPage;
 			};
 			name = Release;
@@ -514,6 +591,7 @@
 				3D10DF381F86C97500BA8405 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		3D10DF391F86C97500BA8405 /* Build configuration list for PBXNativeTarget "TheRegistrationPageTests" */ = {
 			isa = XCConfigurationList;
@@ -522,6 +600,7 @@
 				3D10DF3B1F86C97500BA8405 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		3D10DF3C1F86C97500BA8405 /* Build configuration list for PBXNativeTarget "TheRegistrationPageUITests" */ = {
 			isa = XCConfigurationList;
@@ -530,8 +609,22 @@
 				3D10DF3E1F86C97500BA8405 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		42F9030F239AE8D300C6021D /* TheRegistration.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				42F90310239AE8D300C6021D /* TheRegistration.xcdatamodel */,
+			);
+			currentVersion = 42F90310239AE8D300C6021D /* TheRegistration.xcdatamodel */;
+			path = TheRegistration.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 3D10DF061F86C97500BA8405 /* Project object */;
 }
