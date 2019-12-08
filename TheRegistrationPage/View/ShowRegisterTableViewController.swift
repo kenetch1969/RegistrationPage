@@ -3,7 +3,7 @@
 //  TheRegistrationPage
 //
 //  Created by Juan Gerardo Cruz on 12/7/19.
-//  Copyright © 2019 technomotion. All rights reserved.
+//  Copyright © 2019 inventaapps. All rights reserved.
 //
 
 import UIKit

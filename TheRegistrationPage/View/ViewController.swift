@@ -14,6 +14,8 @@ class ViewController: UIViewController {
     @IBOutlet weak var passwordTextField: UITextField!
     @IBOutlet weak var fullNameTextField: UITextField!
     @IBOutlet weak var phoneNumberTextField: UITextField!
+    @IBOutlet weak var testSegmented: UISegmentedControl!
+    
     
     
     @IBOutlet weak var activityIndicatorRegister: UIActivityIndicatorView!
@@ -32,6 +34,7 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         //self.presenter = RegistrationPresenter(delegate: self)
+        self.testSegmented.selectedSegmentIndex = -1
     }
 
     override func didReceiveMemoryWarning() {
@@ -43,9 +46,19 @@ class ViewController: UIViewController {
     }
     
     
-    @IBAction func temporalAction(_ sender: UIButton) {
+    @IBAction func testSegmentedValueChanged(_ sender: UISegmentedControl) {
         
-        self.performSegue(withIdentifier: "segueShowRegister", sender: self)
+        switch sender.selectedSegmentIndex {
+        case 0:
+              self.performSegue(withIdentifier: "segueShowRegister", sender: self)
+        case 1:
+              self.performSegue(withIdentifier: "segueShowRegisterManual", sender: self)
+        case 2:
+            break
+        default:
+            break
+        }
+        
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
@@ -55,6 +68,15 @@ class ViewController: UIViewController {
             let presenter = ShowPresenter(model: persistencia)
             presenter.attachView(view: viewShowRegister)
             viewShowRegister.presenter = presenter
+            
+        }
+        
+        if segue.identifier == "segueShowRegisterManual" {
+            guard let viewShowRegister = segue.destination as? ShowRegisterViewController else { return }
+            let persistencia = UserPersistence()
+            let presenter = ShowPresenter(model: persistencia)
+            presenter.attachView(view: viewShowRegister)
+            viewShowRegister.presenter = presenter 
             
         }
     }

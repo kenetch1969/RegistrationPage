@@ -20,6 +20,8 @@
 		42E50AC1239BF64B00FC2B4C /* UIViewController+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42E50ABF239BF64B00FC2B4C /* UIViewController+Extension.swift */; };
 		42E50AC3239BF73D00FC2B4C /* ShowRegisterTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42E50AC2239BF73D00FC2B4C /* ShowRegisterTableViewController.swift */; };
 		42E50AC5239BFD7800FC2B4C /* ShowPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42E50AC4239BFD7800FC2B4C /* ShowPresenter.swift */; };
+		42F32697239C5DB200BFA117 /* ShowRegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42F32696239C5DB200BFA117 /* ShowRegisterViewController.swift */; };
+		42F32699239C6FC500BFA117 /* UserDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42F32698239C6FC400BFA117 /* UserDetailsViewController.swift */; };
 		42F90311239AE8D300C6021D /* TheRegistration.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 42F9030F239AE8D300C6021D /* TheRegistration.xcdatamodeld */; };
 		42F90316239AED7E00C6021D /* Persistences.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42F90315239AED7E00C6021D /* Persistences.swift */; };
 /* End PBXBuildFile section */
@@ -61,6 +63,8 @@
 		42E50ABF239BF64B00FC2B4C /* UIViewController+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extension.swift"; sourceTree = "<group>"; };
 		42E50AC2239BF73D00FC2B4C /* ShowRegisterTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowRegisterTableViewController.swift; sourceTree = "<group>"; };
 		42E50AC4239BFD7800FC2B4C /* ShowPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowPresenter.swift; sourceTree = "<group>"; };
+		42F32696239C5DB200BFA117 /* ShowRegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowRegisterViewController.swift; sourceTree = "<group>"; };
+		42F32698239C6FC400BFA117 /* UserDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDetailsViewController.swift; sourceTree = "<group>"; };
 		42F90310239AE8D300C6021D /* TheRegistration.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = TheRegistration.xcdatamodel; sourceTree = "<group>"; };
 		42F90315239AED7E00C6021D /* Persistences.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistences.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -177,6 +181,8 @@
 			children = (
 				3D10DF131F86C97500BA8405 /* ViewController.swift */,
 				42E50AC2239BF73D00FC2B4C /* ShowRegisterTableViewController.swift */,
+				42F32696239C5DB200BFA117 /* ShowRegisterViewController.swift */,
+				42F32698239C6FC400BFA117 /* UserDetailsViewController.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -245,7 +251,7 @@
 			attributes = {
 				LastSwiftUpdateCheck = 0830;
 				LastUpgradeCheck = 0830;
-				ORGANIZATIONNAME = technomotion;
+				ORGANIZATIONNAME = inventaapps;
 				TargetAttributes = {
 					3D10DF0D1F86C97500BA8405 = {
 						CreatedOnToolsVersion = 8.3.2;
@@ -321,6 +327,7 @@
 			files = (
 				42E50AC1239BF64B00FC2B4C /* UIViewController+Extension.swift in Sources */,
 				42F90311239AE8D300C6021D /* TheRegistration.xcdatamodeld in Sources */,
+				42F32699239C6FC500BFA117 /* UserDetailsViewController.swift in Sources */,
 				42E50ABC239BEDDA00FC2B4C /* BasePresenter.swift in Sources */,
 				42E50AC0239BF64B00FC2B4C /* UIImageView+Extension.swift in Sources */,
 				3D10DF141F86C97500BA8405 /* ViewController.swift in Sources */,
@@ -329,6 +336,7 @@
 				3D10DF401F86CC9F00BA8405 /* RegistrationPresenter.swift in Sources */,
 				42F90316239AED7E00C6021D /* Persistences.swift in Sources */,
 				3D10DF121F86C97500BA8405 /* AppDelegate.swift in Sources */,
+				42F32697239C5DB200BFA117 /* ShowRegisterViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

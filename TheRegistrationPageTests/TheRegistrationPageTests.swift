@@ -41,9 +41,9 @@ class TheRegistrationPageTests: XCTestCase {
     
     
     func testUpdateUser () {
-        let item = ["email":"a@l.com", "password": "password01", "fullName": "Romero", "phone": "5566777" ]
+        let item = ["email":"a@b.com", "password": "password01", "fullname": "Ramiro", "phone": "5566777" ]
         let persistencia = UserPersistence()
-        let predicate = NSPredicate(format: "email = %@", "a@c.com")
+        let predicate = NSPredicate(format: "email = %@", "a@b.com")
         persistencia.query(predicate: predicate) { (result) in
             guard let user = result.first else { return }
             persistencia.update(item, update: user) { (result, message) in
