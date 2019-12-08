@@ -24,8 +24,8 @@ class RegistrationPresenter: BasePresenter {
         self.model = model
     }
     
-    func attachView(view : View){
-        self.delegate = view
+    func attachView(delegate : View){
+        self.delegate = delegate
     }
     
     func detachView(){

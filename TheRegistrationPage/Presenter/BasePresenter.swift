@@ -11,7 +11,7 @@ import Foundation
 
 protocol BasePresenter {
     associatedtype View
-    func attachView(view : View)
+    func attachView(delegate : View)
     func detachView()
     func destroy()
 }

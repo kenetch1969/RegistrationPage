@@ -24,8 +24,8 @@ class ShowPresenter: BasePresenter {
         self.model = model
     }
     
-    func attachView(view: ShowDelegate) {
-        self.delegate = view
+    func attachView(delegate: ShowDelegate) {
+        self.delegate = delegate
     }
     
     func detachView() {
