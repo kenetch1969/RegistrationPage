@@ -17,8 +17,8 @@ MVP or Model View Presenter, better than MVC.
 		destroy
 	8. Agrega en la vista variable delegado por inyeccion de dependencia por variable
 	9. Implementar protocolo de comunicacion en la vista
- 10. Crear test para modelo
- 11. Crear test para presenter con pantallas.
+ 	10. Crear test para modelo
+ 	11. Crear test para presenter con pantallas.
  
  Clase Persistences
  Con las funciones basicas de CRUD en CORE DATA para una entidad User
