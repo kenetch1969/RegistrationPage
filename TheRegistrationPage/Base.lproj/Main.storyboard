@@ -137,11 +137,31 @@
                         <outlet property="testSegmented" destination="D1y-I7-n78" id="O6n-1G-HJx"/>
                         <segue destination="E6g-P2-y4t" kind="show" identifier="segueShowRegister" id="S6p-g7-6kA"/>
                         <segue destination="czx-nY-31C" kind="show" identifier="segueShowRegisterManual" id="mr0-uF-K7q"/>
+                        <segue destination="OTg-pp-6So" kind="show" identifier="segueContacts" id="C5B-Lw-9yu"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="136.80000000000001" y="129.98500749625188"/>
+        </scene>
+        <!--Contact View Controller-->
+        <scene sceneID="27Q-kQ-7HP">
+            <objects>
+                <viewController id="OTg-pp-6So" customClass="ContactViewController" customModule="TheRegistrationPage" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Gbe-iZ-j5U"/>
+                        <viewControllerLayoutGuide type="bottom" id="xz3-3T-NJL"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="APa-QW-fnZ">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="647"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="fi9-Vk-zpf"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="JCk-bD-jyT" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-793" y="896"/>
         </scene>
         <!--Show Register View Controller-->
         <scene sceneID="zBy-4V-2yt">

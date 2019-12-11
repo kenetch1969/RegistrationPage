@@ -54,6 +54,7 @@ class ViewController: UIViewController {
         case 1:
               self.performSegue(withIdentifier: "segueShowRegisterManual", sender: self)
         case 2:
+            self.performSegue(withIdentifier: "segueContacts", sender: self)
             break
         default:
             break
@@ -66,7 +67,7 @@ class ViewController: UIViewController {
             guard let viewShowRegister = segue.destination as? ShowRegisterTableViewController else { return }
             let persistencia = UserPersistence()
             let presenter = ShowPresenter(model: persistencia)
-            presenter.attachView(view: viewShowRegister)
+            presenter.attachView(delegate: viewShowRegister)
             viewShowRegister.presenter = presenter
             
         }
@@ -75,7 +76,7 @@ class ViewController: UIViewController {
             guard let viewShowRegister = segue.destination as? ShowRegisterViewController else { return }
             let persistencia = UserPersistence()
             let presenter = ShowPresenter(model: persistencia)
-            presenter.attachView(view: viewShowRegister)
+            presenter.attachView(delegate: viewShowRegister)
             viewShowRegister.presenter = presenter 
             
         }

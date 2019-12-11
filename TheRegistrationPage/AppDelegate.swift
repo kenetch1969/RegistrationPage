@@ -22,7 +22,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         if let viewRegister = storyboard.instantiateViewController(withIdentifier: "FirstViewController") as? ViewController {
           let persistencia = UserPersistence()
           let presenter = RegistrationPresenter(model: persistencia)
-          presenter.attachView(view: viewRegister)
+            presenter.attachView(delegate: viewRegister)
           viewRegister.presenter = presenter
           self.window = UIWindow(frame: UIScreen.main.bounds)
           self.window?.rootViewController = viewRegister

@@ -15,6 +15,10 @@
 		3D10DF271F86C97500BA8405 /* TheRegistrationPageTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D10DF261F86C97500BA8405 /* TheRegistrationPageTests.swift */; };
 		3D10DF321F86C97500BA8405 /* TheRegistrationPageUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D10DF311F86C97500BA8405 /* TheRegistrationPageUITests.swift */; };
 		3D10DF401F86CC9F00BA8405 /* RegistrationPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D10DF3F1F86CC9F00BA8405 /* RegistrationPresenter.swift */; };
+		42535AF723A12E4100F9FFEC /* ContactViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42535AF623A12E4100F9FFEC /* ContactViewController.swift */; };
+		42535AF923A12F6C00F9FFEC /* Contact.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42535AF823A12F6C00F9FFEC /* Contact.swift */; };
+		42535AFB23A12F9000F9FFEC /* ContactAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42535AFA23A12F9000F9FFEC /* ContactAPI.swift */; };
+		42535AFD23A1380200F9FFEC /* ContactTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42535AFC23A1380200F9FFEC /* ContactTableViewCell.swift */; };
 		42E50ABC239BEDDA00FC2B4C /* BasePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42E50ABB239BEDDA00FC2B4C /* BasePresenter.swift */; };
 		42E50AC0239BF64B00FC2B4C /* UIImageView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42E50ABE239BF64B00FC2B4C /* UIImageView+Extension.swift */; };
 		42E50AC1239BF64B00FC2B4C /* UIViewController+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42E50ABF239BF64B00FC2B4C /* UIViewController+Extension.swift */; };
@@ -58,6 +62,10 @@
 		3D10DF311F86C97500BA8405 /* TheRegistrationPageUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TheRegistrationPageUITests.swift; sourceTree = "<group>"; };
 		3D10DF331F86C97500BA8405 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3D10DF3F1F86CC9F00BA8405 /* RegistrationPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegistrationPresenter.swift; sourceTree = "<group>"; };
+		42535AF623A12E4100F9FFEC /* ContactViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactViewController.swift; sourceTree = "<group>"; };
+		42535AF823A12F6C00F9FFEC /* Contact.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Contact.swift; sourceTree = "<group>"; };
+		42535AFA23A12F9000F9FFEC /* ContactAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactAPI.swift; sourceTree = "<group>"; };
+		42535AFC23A1380200F9FFEC /* ContactTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactTableViewCell.swift; sourceTree = "<group>"; };
 		42E50ABB239BEDDA00FC2B4C /* BasePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasePresenter.swift; sourceTree = "<group>"; };
 		42E50ABE239BF64B00FC2B4C /* UIImageView+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImageView+Extension.swift"; sourceTree = "<group>"; };
 		42E50ABF239BF64B00FC2B4C /* UIViewController+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extension.swift"; sourceTree = "<group>"; };
@@ -162,6 +170,8 @@
 			isa = PBXGroup;
 			children = (
 				42F90315239AED7E00C6021D /* Persistences.swift */,
+				42535AF823A12F6C00F9FFEC /* Contact.swift */,
+				42535AFA23A12F9000F9FFEC /* ContactAPI.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -183,6 +193,8 @@
 				42E50AC2239BF73D00FC2B4C /* ShowRegisterTableViewController.swift */,
 				42F32696239C5DB200BFA117 /* ShowRegisterViewController.swift */,
 				42F32698239C6FC400BFA117 /* UserDetailsViewController.swift */,
+				42535AF623A12E4100F9FFEC /* ContactViewController.swift */,
+				42535AFC23A1380200F9FFEC /* ContactTableViewCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -327,10 +339,14 @@
 			files = (
 				42E50AC1239BF64B00FC2B4C /* UIViewController+Extension.swift in Sources */,
 				42F90311239AE8D300C6021D /* TheRegistration.xcdatamodeld in Sources */,
+				42535AF723A12E4100F9FFEC /* ContactViewController.swift in Sources */,
 				42F32699239C6FC500BFA117 /* UserDetailsViewController.swift in Sources */,
+				42535AFD23A1380200F9FFEC /* ContactTableViewCell.swift in Sources */,
 				42E50ABC239BEDDA00FC2B4C /* BasePresenter.swift in Sources */,
 				42E50AC0239BF64B00FC2B4C /* UIImageView+Extension.swift in Sources */,
+				42535AF923A12F6C00F9FFEC /* Contact.swift in Sources */,
 				3D10DF141F86C97500BA8405 /* ViewController.swift in Sources */,
+				42535AFB23A12F9000F9FFEC /* ContactAPI.swift in Sources */,
 				42E50AC5239BFD7800FC2B4C /* ShowPresenter.swift in Sources */,
 				42E50AC3239BF73D00FC2B4C /* ShowRegisterTableViewController.swift in Sources */,
 				3D10DF401F86CC9F00BA8405 /* RegistrationPresenter.swift in Sources */,
@@ -490,7 +506,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 9C6BLPLVF5;
 				INFOPLIST_FILE = TheRegistrationPage/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.inventaapps.TheRegistrationPage;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -504,7 +520,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 9C6BLPLVF5;
 				INFOPLIST_FILE = TheRegistrationPage/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.inventaapps.TheRegistrationPage;
 				PRODUCT_NAME = "$(TARGET_NAME)";
